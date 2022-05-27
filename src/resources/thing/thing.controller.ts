@@ -22,6 +22,7 @@ class ThingController implements Controller {
         );
     }
 
+    //? This should be Bussiness layer
     private create = async (
         req: Request,
         res: Response,

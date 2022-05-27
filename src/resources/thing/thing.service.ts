@@ -4,6 +4,7 @@ import Thing from "./thing.interface";
 class ThingService {
     private thing = thingModel;
 
+    //? This should be repository layer
     /**
      * Create a new Thing
      */
