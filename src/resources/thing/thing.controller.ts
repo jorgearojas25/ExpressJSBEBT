@@ -1,5 +1,5 @@
 import { Router, Request, Response, NextFunction } from "express";
-import Controller from "@/utils/interfaces/controller.interface";
+import Controller from "interfaces/controller.interface";
 import HttpException from "@/utils/exceptions/http.exception";
 import validationMiddleware from "@/middleware/validation.middleware";
 import validate from "@/resources/thing/thing.validation";
@@ -29,16 +29,6 @@ class ThingController implements Controller {
         next: NextFunction
     ): Promise<Response | void> => {
         try {
-            const {
-                testName,
-                active,
-                numberProp,
-                dateProp,
-                numberRange,
-                arrayProp,
-                someId,
-            } = req.body;
-
             const thing = await this.ThingService.create(req.body);
 
             res.status(201).json({ thing });
