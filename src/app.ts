@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import compression from "compression";
 import cors from "cors";
 import morgan from "morgan";
-import Controller from "interfaces/controller.interface";
+import Controller from "@/interfaces/common/controller.interface";
 import ErrorMiddlware from "@/middleware/error.middleware";
 import helmet from "helmet";
 

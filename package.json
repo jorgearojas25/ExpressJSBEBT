@@ -50,6 +50,10 @@
   },
   "_moduleAliases": {
     "@/resources": "dist/resources",
+    "@/network" :"dist/1.network",
+    "@/business" :"dist/2.business",
+    "@/store" :"dist/3.store",
+    "@/interfaces" :"dist/interfaces",
     "@/utils": "dist/utils",
     "@/middleware": "dist/middleware"
   }

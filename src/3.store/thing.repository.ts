@@ -1,7 +1,7 @@
-import thingModel from "./thing.model";
-import Thing from "./thing.interface";
+import thingModel from "@/interfaces/Entities/Thing/thing.model";
+import Thing from "@/interfaces/Entities/Thing/thing.interface";
 
-class ThingService {
+class ThingRepository {
     private thing = thingModel;
 
     //? This should be repository layer
@@ -19,4 +19,4 @@ class ThingService {
     }
 }
 
-export default ThingService;
+export default ThingRepository;
